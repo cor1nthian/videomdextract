@@ -1,5 +1,5 @@
 # videomdextract
-Media file metadata extractor.Extracted info resides in script folder (bt default).
+Media file metadata extractor. Extracted info resides in script folder (bt default).
 
 Script uses fffmpeg exe tool, read more on this in script comments
 
