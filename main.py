@@ -1,7 +1,7 @@
 import subprocess, os, sys
 
 ffmpegfname = 'ffmpeg.exe'
-mfpath = 'C:\\Users\\admin\\Downloads\\Perimeter OST\\mp3\\mp4\\out.mp4' # media file path
+mfpath = '' # media file path
 mfmetapath = 'metadata.txt'
 
 # Build ffmpeg and ffprobe from source
@@ -116,8 +116,9 @@ def extractMetadata(mediafilepath: str):
         type(mediafilepath) is str:
         return None
     mfpathprepped = mediafilepath
-    if " " in mfpathprepped:
+    if ' ' in mfpathprepped:
         mfpathprepped = '"' + mfpathprepped + '"'
+    mfpathprepped.replace(' ', '\\ ')
     arglist = [ ffmpegfname,
                 '-i',
                 mfpathprepped,
