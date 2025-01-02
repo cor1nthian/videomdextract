@@ -118,7 +118,6 @@ def extractMetadata(mediafilepath: str):
     mfpathprepped = mediafilepath
     if ' ' in mfpathprepped:
         mfpathprepped = '"' + mfpathprepped + '"'
-    mfpathprepped.replace(' ', '\\ ')
     arglist = [ ffmpegfname,
                 '-i',
                 mfpathprepped,
