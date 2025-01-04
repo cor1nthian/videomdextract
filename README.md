@@ -6,7 +6,7 @@ Script uses fffmpeg exe tool, read more on this in script comments
 Tested with Windows 10
 
 Can be called with arguments:
-| Ppsition | Suggested type | Description |
+| Position | Suggested type | Description |
 | --- | --- | --- |
 | 1 | String | Path to mediafile |
 
