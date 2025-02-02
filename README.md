@@ -10,6 +10,8 @@ Can be called with arguments:
 | --- | --- | --- |
 | 1 | String | Path to mediafile |
 
+:exclamation: Variables set in the script have priority over script arguments
+
 Script return codes:
 | Code | Description |
 | --- | --- |
